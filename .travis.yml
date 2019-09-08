@@ -3,14 +3,18 @@ services:
 
 env:
   global:
-    - DOCKER_TAG=jarokelo/php-nginx:php71-dev
-    - secure: bpzCjKqey2IccjgPU4evjz85h5pnLGxgFXj7FIkNtIbXj2OiZq6sYbMKPyL0hH+qby2xQY9KoXHTaB8YSx1GQilNzLeukRgFOs8HuTqxbT7tirBydxM4bLdKXN0Y6HXkQT4AbFpOA4cdyvNshcwT3P5x6Q5SS29JD1HEAylvEt2T64GzvPzDZ8SWLm7pMwXi5/bsxVpCbLFIt+Z7CJCjOu0OshQV6/1jxmBoC6Na/j014bVUKe2389M5Lzho6RSOW2BJQiDteOuGP7pRCdTqmdnRUwweWDG/X9k/Qfj1+2OZSKSxe+vzzi49neRoP7nLKfhz+TenxLOiBHvaMc1Yt+3WygtU/zN8TK4t8AdXOgRlitkn7Novy9x3c3e2Akg3WW9s0QUYL3iw56ySUrs5nF1zScl+AGgmrnVbiORxI7UlzH8Y0sJVs4N084BVnqrbw2YTyId6qt3a12ax9EeItohEA/YpcT7qebNCkB7ncmLNsp1C9CDFq96cxNbABx4Ri4jC3c87rMICckUR7T91Q9zpIO2QI5a8dwLQ6IHybZMU/Ii9iQQAQfTss+0yEH7aobcL7xXNPJ96I+jV4UarzA3LKLILuTniSAb1+ArlG1VS+HVkIW88rAqebVmp/GnRGKVy+8BjtIDIKvGkOjdoTYXAsKYZh1glfaFGoZ9uZBo=
-    - secure: mgIfuOAnf+mqi7RkqoOoQhHOgfi6KDMe1Whn7Rply4s2l5g/6Z3FsyJ6CXmo7tbx2Jbv3/Boi+u81wCCUtRaC/g60H2UWMXdx1S6cp8IoJH/bk4zuMw/StBHe7gLCQONULvDD3uRyVUBBhfcO68swRGsupp6gaQGFHWrSjVj50TUDBEzudq7AqKax+AHByn1G2yYw9st9QHTUgj6+rtNC+5/zFnp/pL219iq2vDlWuaF1fu+9hzB+k91xGbKIGsM4E36GjjJtcKNQTpNYYHaB7RMIwRKe1OjlXtI12tI88Pk4IBle312fNJ4PV2VYhEMjFby/TUGJbac5t2QSqXGiVfUB6aRBUpOTZvvnZ7uW5pj9HmUgeLUEOek5MwiKVoa+U+v0w229/rr3nMdmSfPxjCLBLN/x66gEw7IwqEqvH5cThnLd/CyMRnMgDuhO9hikN+HO+ZkEzmZqjIclaD48bYCMxkIV9FwtDfkRP9adYsn9vJUVvXfq7132V2zyRoYX94a22AXWFzTvD37r0c2SQvlXXE9ZP1r/IlB+fc6QNS0mzUatUUkaC/NxemjS/DeSKyhsy161WEb1Ywht87LeXJ45idC1qaNSPET7zNKzku73IaUU23Oh8pqJEe5HwgfBlMnQtYxv1TVPaGaELHyjKsldS0LR7+uHm25H1TWkos=
+    - DOCKER_TAG=jarokelo/php-nginx:php71
+    - secure: IMdefippM1jDvet5qtrFnC/kmzIyyh7Z9WBjtDUOF9PI8+ZWkPlPaMDMEzHS7dLcQz8i3FWAPAaZ+g1kyM5ve7IkeiAlRvQXXnuc1LObOV2lwdDciNOfHihy3STJLebu0+SJwv2HQvbRxhk9kgtfl+B4AA14Bj5ULn6++cRGexMGjJbxfCHIzeOxar4P4zPsflJ8gl/WrRjeEdu2/NM2qPnGvra4/HhxFT/SrPzuvVBQCUHf+gnnorQ8k4Y1Zv15q+cQmA3H68ZmsZqVZKK+F+3vxA3uscxc2T1biJWPb57oZ0dz5h83v9QqTJNgfqFwHYRfTQuV/UF75+jtW36P98GC3tIF3FClK7R7QXouVWWF7j6XH0SfYnWxygZhVv7MkqoOq/Ijw4UM5Mi68D55MTev5L6tTS2YLMba06idgET3+ZoikeoLxZ4lu3BIijxfJFVQ8Jqv/nJbKgBwQjV6TGYUS6FO0bl8hwxgdtqvZ/ah/SGXflp19rIHEoNLnLYTE4ivcFk3Pj4De86MoiUDt0Fkks4SWsKTJILtN5VdMAlO1tsR0IKXU8fOnfQGRGZzyIXyaDhXxWty7piU9BiS1cTG6Mn97TO72ULpNsGKvXSIS20t4Ut/e+sgWNgY7iQNO9bfbzG85Zp68ob38/gy0aBKRwdaOyy8dDB4CTv4pn0=
+    - secure: FMJG8QYwxLBLDbM96Yc5g6VJYwjR2xrYrPCRbDH+hzNuI4dukOe61u94sEtPYOoPKer04sZb0DOoQEOlNxsT/Qh4V+BSRP2+ltcx2r5XBcboiZQaDF49d+QDq2OYDsIetN0CTNv8GOjrrnsFRvBNBAGZukT/tQufuqdsl9rGU+lgQ7Zu2L8Y5Dtfzx7goy3aumixGpBa5fMg+ixEEm8rCZDJmVxv9KBNt7Ig04OqJ8SqV/mD8IeKhPciVm4yP29V5RXgkqz4yUxlYwbi3Lpbxkl62c30ACjykwEMY4Tu7ApJD0rHBsjFbETUUGwYjsf6QPBwmRklU3seYMxnxClAewtryK0DhAr/mG+QAD99HgYn8414cZp2FNGYlhNXo4tMUKPSS6UdoUtVY8e1cGzLkkjsktfkmhU4eFD2WfrGFO3ciz4CtTpl3ua2vKJU/tkWP5gfL1kW45jONFwqEk0s4SQ98x45h+5t92i23f0w1e/y39GaYTCq0XuyWOPC2RCk/pXApwOZjOwaOvzJS4EjO1Zm5L2bYxK8s10gUyaobIQwi/ttg3Kclt9GtwB1jFP8q8Py6FTc7hyyKCHdN+bD7+mPEYx2lPBmGgtoWkq/xZyqfR4WFoImxks7dJ7NzcW/+H49pfgdZcStN6j6eimqWNdy1O73/n58Zo5PmopAE4s=
 
 before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker pull jarokelo/debian:stretch
-  - docker build -t "${DOCKER_TAG}" .
+  - 'docker pull "${DOCKER_TAG}-dev"'
 
 script:
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && docker push "${DOCKER_TAG}" || echo "Not pushing for pull request."'
+  - 'docker build -t "${DOCKER_TAG}" .'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && docker push "${DOCKER_TAG}"'
+  - 'docker build -t "${DOCKER_TAG}-dev" -f Dockerfile.dev .'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && docker push "${DOCKER_TAG}-dev"'
+  - echo "Build finished."

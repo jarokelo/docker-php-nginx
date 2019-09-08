@@ -58,7 +58,8 @@ ADD sigproxy /usr/local/bin/sigproxy
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 ADD supervisor/* /etc/supervisor/conf.d/
 # create log directory
-RUN mkdir -p /var/log/supervisor
+RUN mkdir -p /var/log/supervisor \
+    && chmod +x /usr/local/bin/supervisor-watcher /usr/local/bin/sigproxy
 
 # add syslog config
 ADD rsyslog.conf /etc/rsyslog.conf
