@@ -1,0 +1,16 @@
+services:
+  - docker
+
+env:
+  global:
+    - DOCKER_TAG=jarokelo/php-nginx:php71-dev
+    - secure: bpzCjKqey2IccjgPU4evjz85h5pnLGxgFXj7FIkNtIbXj2OiZq6sYbMKPyL0hH+qby2xQY9KoXHTaB8YSx1GQilNzLeukRgFOs8HuTqxbT7tirBydxM4bLdKXN0Y6HXkQT4AbFpOA4cdyvNshcwT3P5x6Q5SS29JD1HEAylvEt2T64GzvPzDZ8SWLm7pMwXi5/bsxVpCbLFIt+Z7CJCjOu0OshQV6/1jxmBoC6Na/j014bVUKe2389M5Lzho6RSOW2BJQiDteOuGP7pRCdTqmdnRUwweWDG/X9k/Qfj1+2OZSKSxe+vzzi49neRoP7nLKfhz+TenxLOiBHvaMc1Yt+3WygtU/zN8TK4t8AdXOgRlitkn7Novy9x3c3e2Akg3WW9s0QUYL3iw56ySUrs5nF1zScl+AGgmrnVbiORxI7UlzH8Y0sJVs4N084BVnqrbw2YTyId6qt3a12ax9EeItohEA/YpcT7qebNCkB7ncmLNsp1C9CDFq96cxNbABx4Ri4jC3c87rMICckUR7T91Q9zpIO2QI5a8dwLQ6IHybZMU/Ii9iQQAQfTss+0yEH7aobcL7xXNPJ96I+jV4UarzA3LKLILuTniSAb1+ArlG1VS+HVkIW88rAqebVmp/GnRGKVy+8BjtIDIKvGkOjdoTYXAsKYZh1glfaFGoZ9uZBo=
+    - secure: mgIfuOAnf+mqi7RkqoOoQhHOgfi6KDMe1Whn7Rply4s2l5g/6Z3FsyJ6CXmo7tbx2Jbv3/Boi+u81wCCUtRaC/g60H2UWMXdx1S6cp8IoJH/bk4zuMw/StBHe7gLCQONULvDD3uRyVUBBhfcO68swRGsupp6gaQGFHWrSjVj50TUDBEzudq7AqKax+AHByn1G2yYw9st9QHTUgj6+rtNC+5/zFnp/pL219iq2vDlWuaF1fu+9hzB+k91xGbKIGsM4E36GjjJtcKNQTpNYYHaB7RMIwRKe1OjlXtI12tI88Pk4IBle312fNJ4PV2VYhEMjFby/TUGJbac5t2QSqXGiVfUB6aRBUpOTZvvnZ7uW5pj9HmUgeLUEOek5MwiKVoa+U+v0w229/rr3nMdmSfPxjCLBLN/x66gEw7IwqEqvH5cThnLd/CyMRnMgDuhO9hikN+HO+ZkEzmZqjIclaD48bYCMxkIV9FwtDfkRP9adYsn9vJUVvXfq7132V2zyRoYX94a22AXWFzTvD37r0c2SQvlXXE9ZP1r/IlB+fc6QNS0mzUatUUkaC/NxemjS/DeSKyhsy161WEb1Ywht87LeXJ45idC1qaNSPET7zNKzku73IaUU23Oh8pqJEe5HwgfBlMnQtYxv1TVPaGaELHyjKsldS0LR7+uHm25H1TWkos=
+
+before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker pull jarokelo/debian:stretch
+  - docker build -t "${DOCKER_TAG}" .
+
+script:
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && docker push "${DOCKER_TAG}" || echo "Not pushing for pull request."'
